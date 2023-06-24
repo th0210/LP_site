@@ -1,0 +1,77 @@
+@use "../global" as global;
+
+.p-about {
+    padding: 154px 0 100px 0;
+    background: global.$text-color2;
+    text-align: center;
+
+    @include global.mq(sp) {
+        padding: 80px+34px  0 60px 0;
+    }
+}
+
+.p-about__title {
+    font-size: 48px;
+    font-weight: global.$fw-bold;
+    letter-spacing: 0.05em;
+    color: global.$primary-color;
+    position: relative;
+
+    @include global.mq(sp) {
+        font-size: 30px;
+        line-height: 42px;
+    }
+
+    span {
+        font-size: 36px;
+        font-family: global.$ff-en;
+        color: global.$primary-color-sub;
+        letter-spacing: 0;
+        display: block;
+        position: absolute;
+        top: -54px;
+        left: 50%;
+        transform: translateX(-50%); 
+
+        @include global.mq(tb) {
+            white-space: nowrap; 
+        }
+
+        @include global.mq(sp) {
+            font-size: 22px;
+            line-height: 1;
+            white-space: nowrap;
+            top: -22px-12px;
+        }
+    }
+}
+
+.p-about__sub {
+    font-size: 18px;
+    font-weight: global.$fw-regular;
+    color: global.$text-color;
+    line-height: 32px;
+    margin-top: 29px;
+
+    @include global.mq(sp) {
+        font-size: 16px; 
+        line-height: 25px;
+        margin-top: 24px;
+    }
+
+    span {
+        font-weight: global.$fw-bold;
+
+        @include global.mq(sp) {
+            font-size: 16px;
+        }
+    }
+}
+
+.p-about__button {
+    margin: 40px auto 0 auto;  
+
+    @include global.mq(sp) {
+        margin-top: 24px;
+    }
+}

@@ -1,0 +1,105 @@
+@use "../global" as global;
+
+.p-mv__inner {
+    position: relative;
+}
+
+.p-mv-content {
+    margin-right: 16px;
+
+    @include global.mq(tb) {
+        margin-right: 0;
+    }
+
+    @include global.mq(sp) {
+        margin-right: 0;
+    }
+}
+
+.p-mv-content__head {
+    font-size: 60px;
+    font-weight: global.$fw-bold;
+    line-height: 87px;
+    margin-top: 117px;
+
+    @include global.mq(tb) {
+        margin-top: 84px;
+        font-size: 48px;
+    }
+
+    @include global.mq(sp) {
+        margin-top: 0;
+        font-size: 30px;
+        line-height: 48px;
+    }
+
+    span {
+        white-space: nowrap;
+    }
+}
+
+.p-mv-content__sub {
+    font-size: 18px;
+    font-weight: global.$fw-regular;
+    line-height: 32px;
+    margin-top: 24px;
+
+    @include global.mq(sp) {
+        font-size: 16px;
+        line-height: 26px;
+        margin-top: 16px;
+    }
+}
+
+.p-mv-content__img {
+    height: auto;
+    display: none;
+
+    @include global.mq(sp) {
+        display: block;
+        max-width: 305px;
+        margin: -25px auto 0 auto;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.p-mv-content__button-area {
+    margin-top: 33px;
+    display: flex;
+
+    @include global.mq(tb) {
+        flex-direction: column;
+    }
+
+    @include global.mq(sp) {
+        display: block;
+        margin-top: -14px-25px;
+    }
+}
+
+.p-mv-content__button-area-item {
+    &:first-child {
+        margin-right: 37px;
+
+        @include global.mq(tb) {
+            margin-right: 0; 
+        }
+
+        @include global.mq(sp) {
+            margin-right: 0;
+        }
+    }
+
+    &:last-child {
+        @include global.mq(tb) {
+            margin-top: 24px; 
+        }
+
+        @include global.mq(sp) {
+            margin-top: 32px;
+        }
+    }
+}

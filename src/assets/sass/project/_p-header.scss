@@ -1,0 +1,65 @@
+@use "../global" as global;
+
+.p-header {
+    width: 100%;
+    background: global.$text-color2;
+    padding: 22px 0;  
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: global.$header;
+
+    @include global.mq(tb) {
+        padding: 14px 0;
+    }
+    
+    @include global.mq(sp) {
+        font-size: 24px;
+        padding: 14px 0;
+    }   
+}
+
+.p-header__nav {
+    margin-right: 14px; 
+}
+
+.p-header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include global.mq(tb) {
+       padding: 0 30px;
+    }
+} 
+
+.p-header__logo {
+    font-size: 28px;
+    color: global.$primary-color;
+    font-weight: global.$fw-black;
+    font-family: global.$ff-logo;
+    letter-spacing: 0.05em;
+
+    @include global.mq(sp) {
+        font-size: 24px;
+    }
+}
+
+.p-header__content {
+    display: flex;
+
+    @include global.mq(sp) {
+        display: none;
+    }
+}
+
+.p-header__button {
+    @include global.mq(tb) {
+        display: none;
+    }
+}
+.p-header__menu {
+    @include global.mq(tb) {
+        display: block;
+    }
+}

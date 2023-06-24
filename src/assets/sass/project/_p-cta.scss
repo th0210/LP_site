@@ -1,0 +1,33 @@
+@use "../global"  as global;
+
+.p-cta {
+    padding: 60px 0; 
+    background: global.$text-color;
+
+    @include global.mq(sp) {
+        padding: 40px 20px;
+    }
+}
+
+.p-cta-text {
+    font-size: 36px;
+    color: global.$text-color2;
+    line-height: 52px;
+    font-weight: global.$fw-bold;
+    letter-spacing: 0.02em;
+    text-align: center;
+
+    @include global.mq(tb) {
+        font-size: 28px;    }
+        
+
+    @include global.mq(sp) {
+        font-size: 18px;
+        line-height: 29px;
+    }
+}
+
+.p-cta__button {
+    margin-top: 32px;
+    text-align: center;
+}

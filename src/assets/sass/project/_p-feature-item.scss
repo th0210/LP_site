@@ -1,0 +1,231 @@
+@use "../global" as global;
+
+.p-feature-item {
+    display: flex;
+    align-items: flex-end;
+
+    @include global.mq(tb) {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse; 
+        margin-top: 40px;
+    }
+
+    @include global.mq(sp) {
+        display: flex; 
+        flex-direction: column-reverse;
+    }
+
+    &:nth-child(2) {
+        margin-top: 153px;
+        align-items: flex-start;
+
+        @include global.mq(tb) {
+            display: flex;
+            align-items: center;
+            flex-direction: column; 
+            margin-top: 80px;
+        }
+
+        @include global.mq(sp) {
+            display: flex; 
+            flex-direction: column;
+            margin-top: 60px;
+        }
+    }
+
+    &:nth-child(3) {
+        margin-top: -78px;
+
+        @include global.mq(tb) {
+            display: flex;
+            align-items: center;
+            flex-direction: column-reverse; 
+            margin-top: 80px;
+        }
+
+        @include global.mq(sp) {
+            margin-top: 60px;
+        }
+    }
+}
+
+.p-feature-item__texts1 {
+    background-color: global.$text-color2;
+    max-width: 742px;
+    padding: 65px 40px 64px 148px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    margin-bottom: 30px;
+
+    @include global.mq(tb) {
+        margin-top: -68px;
+        padding: 45px 30px 45px 95px;
+        margin-bottom: 0;
+    }
+
+    @include global.mq(sp) {
+        padding: 49px+42px 20px 40px 20px;
+        border-radius: 16px;
+        margin-top: -75px;
+        margin-bottom: 0;
+    }
+}
+
+.p-feature-item__texts2 {
+    background-color: global.$text-color2;
+    max-width: 742px;
+    padding: 65px 19px 65px 148px;
+    box-sizing: border-box;
+    border-radius: 30px;
+
+    @include global.mq(tb) {
+        margin-top: -68px;
+        padding: 45px 30px 45px 95px;
+    }
+
+    @include global.mq(sp) {
+        padding: 40px+42px 0 40px 20px;
+        border-radius: 16px;
+        margin-top: -82px;
+    }
+}
+
+.p-feature-item__texts3 {
+    background-color: global.$text-color2;
+    max-width: 742px;
+    padding: 65px 124px 65px 148px;
+    box-sizing: border-box;
+    border-radius: 30px;
+
+    @include global.mq(tb) {
+        margin-top: -68px;
+        padding: 45px 30px 45px 95px;
+    }
+
+    @include global.mq(sp) {
+        padding: 40px+42px 20px 40px 20px;
+        border-radius: 16px;
+        margin-top: -75px;
+    }
+}
+
+.p-feature-item__head {
+    font-size: 36px;
+    color: global.$text-color;
+    font-weight: global.$fw-bold;
+    line-height: 52px; 
+    position: relative; 
+
+    @include global.mq(tb) {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    @include global.mq(sp) {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    span {
+        font-size: 72px;
+        color: global.$primary-color;
+        font-weight: global.$fw-bold;
+        line-height: 1;
+        position: absolute;
+        left: -103px;
+
+        @include global.mq(tb) {
+            font-size: 42px;
+            top: 0;
+            left: -65px;
+        }
+
+        @include global.mq(sp) {
+            font-size: 42px;
+            top: -42px;
+            left: 0;
+        }
+    }
+}
+
+.p-feature-item__sub {
+    line-height: 28px;
+    font-weight: global.$fw-regular;
+    margin-top: 17px;
+
+    @include global.mq(sp) {
+        font-size: 14px;
+        line-height: 22px;
+        margin-top: 8px;
+    }
+
+    &.item2 {
+        @include global.mq(sp) {
+            padding-right: 20px;
+        }
+    }
+}
+
+.p-feature-item__img1 {
+    max-width: 520px; 
+    margin-left: -15px;
+
+    @include global.mq('tb') {
+        max-width: 400px;
+        margin: 0 auto;
+        z-index: global.$number;
+    }
+
+    @include global.mq(sp) {
+        max-width: 280px; 
+        margin: 0 auto;
+        z-index: global.$number;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.p-feature-item__img2 {
+    max-width: 520px; 
+    margin-right: -74px;
+    margin-top: 25px;
+    z-index: global.$number;
+
+    @include global.mq('tb') {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    @include global.mq(sp) {
+        max-width: 280px; 
+        margin: 0 auto;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.p-feature-item__img3 {
+    max-width: 520px; 
+    margin-left: -74px;
+
+    @include global.mq('tb') {
+        max-width: 400px;
+        margin: 0 auto;
+        z-index: global.$number;
+    }
+
+    @include global.mq(sp) {
+        max-width: 280px; 
+        margin: 0 auto;
+        z-index: global.$number;
+    }
+
+    img {
+        width: 100%;
+    }
+}

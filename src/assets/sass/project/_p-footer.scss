@@ -1,0 +1,74 @@
+@use "../global" as global;
+
+.p-footer {
+    background: #000;
+    padding: 27px 0 27px 0;
+
+    @include global.mq(sp) {
+        padding: 40px 0;
+    }
+}
+
+.p-footer__inner {
+    display: flex;
+    justify-content: space-between;
+
+    @include global.mq(sp) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+.p-footer__logo {
+    font-size: 24px;
+    font-weight: global.$fw-black;
+    font-family: global.$ff-logo;
+    letter-spacing: 0.03em;
+    color: global.$text-color2;
+
+    @include global.mq(sp) {
+        font-size: 24px;
+        text-align: center;
+    }
+}
+
+.p-footer__content {
+    @include global.mq(sp) {
+        margin-top: 32px;
+    }
+}
+
+.p-footer__nav {
+    margin-top: 19px;
+
+    @include global.mq(sp) {
+        margin-top: 32px;
+    }
+}
+
+.p-footer__copyright {
+    font-size: 10px;
+    color: global.$text-color2;
+    font-weight: global.$fw-regular;
+    letter-spacing: 0.03em;
+    margin-top: 19px;
+    position: relative;
+
+    @include global.mq(sp) {
+        margin-top: 28px;
+        text-align: center;
+    }
+
+    span {
+        margin-left: 14px;
+
+        @include global.mq(tb) {
+            display: inline-block;
+        }
+
+        @include global.mq(sp) {
+            display: block;
+            margin: 10px 0 0 0;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+@use "../global" as global;
+
+.p-global-nav {
+    @include global.mq(tb) {
+        display: none;
+    }
+} 
+
+.p-global-nav__lists {
+    display: flex;
+}
+
+.p-global-nav__list {
+    margin-right: 16px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+}
+
+.p-global-nav__link {
+    font-size: 14px;
+    color: global.$text-color;
+    font-weight: global.$fw-bold;
+    letter-spacing: 0.03em;
+    position: relative;
+
+    &::after {
+        content: "";
+        width: 47%;
+        border: 1px solid global.$primary-color;
+        position: absolute;
+        bottom: -8px;
+        left: 50%;
+        transform: translateX(-50%) scale(0, 1);
+        transform-origin: center top;
+        transition: 0.3s;
+    }
+
+    &:hover {
+        &::after {
+            transform: translateX(-50%) scale(1, 1);
+        }
+    }
+}

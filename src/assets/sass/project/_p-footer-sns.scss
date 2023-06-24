@@ -1,0 +1,83 @@
+@use "../global" as global;
+
+.p-footer-sns {
+    margin-top: 47px - 27px;
+}
+
+.p-footer-sns__head {
+    font-size: 18px;
+    color: global.$text-color2;
+    font-family: global.$ff-en;
+    font-weight: global.$fw-bold;
+
+    @include global.mq(sp) {
+        text-align: center;
+    }
+}
+
+.p-footer-sns__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+
+    @include global.mq(sp) {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.p-footer-sns__item {
+    margin-right: 18px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.p-footer-sns__twitter-link {
+    width: 25px; 
+    height: 25px;
+    background: global.$text-color2;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    i {
+        font-size: 16px;
+        color: #000;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+.p-footer-sns__instagram-link {
+    i {
+        font-size: 27px;
+        color: #fff;
+        transition: 0.3s;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
+
+.p-footer-sns__facebook-link {
+    i {
+        font-size: 25px;
+        color: #fff;
+
+        transition: 0.3s;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}

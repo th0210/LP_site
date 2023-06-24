@@ -1,0 +1,43 @@
+@use "../global" as global;
+
+.c-button-middle {
+    max-width: 250px;
+    font-size: 18px;
+    padding: 18px 26px;
+    background-color: global.$primary-color;
+    color: global.$text-color2;
+    font-weight: global.$fw-bold;
+    border-radius: 27px;
+    display: block;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 6px rgb(0, 0, 0, 0.24);
+    transition: 0.3s;
+    text-align: center;
+
+    @include global.mq(tb) {
+        width: auto;
+        max-width: 300px;
+        padding: 20px 42px;
+        margin-top: 28px;
+        text-align: center;
+        border-radius: 50px;
+    }
+
+    @include global.mq(sp) {
+        width: auto;
+        max-width: 300px;
+        padding: 20px 42px;
+        margin-top: 28px;
+        text-align: center;
+        margin: 0 auto;
+        border-radius: 50px;
+    }
+
+    &.drawer {
+        margin: 0 auto;
+    }
+
+    &:hover {
+        opacity: 0.7;
+    }
+}

@@ -1,0 +1,23 @@
+@use "../global" as global;
+
+.p-users-items {
+    display: grid;
+    column-gap: 40px;
+    row-gap: 50px;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 120px;
+
+    @include global.mq(sp) {
+        padding: 0;
+        column-gap: 11px;
+        row-gap: 12px; 
+    }
+}
+
+.p-users-items__item {
+    max-width: 213px;
+
+    img {
+        width: 100%;
+    };
+}

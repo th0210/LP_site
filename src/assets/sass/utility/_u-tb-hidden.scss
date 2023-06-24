@@ -1,0 +1,15 @@
+@use "../global" as global;
+
+.u-tb-hidden {
+    @include global.mq(pc) {
+        display: block;
+    }
+    
+    @include global.mq(tb) {
+        display: none;
+    }
+
+    @include global.mq(sp) {
+        display: block;
+    }
+}

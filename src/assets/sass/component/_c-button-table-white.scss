@@ -1,0 +1,29 @@
+@use "../global" as global;
+
+.c-button-table-white {
+    width: 234px;
+    padding: 14px 45px;
+    color: global.$text-color;
+    text-align: center;
+    background-color: global.$text-color2;
+    font-weight: global.$fw-bold;
+    border-radius: 50px;
+    font-size: 18px;
+    border: 2px solid global.$text-color2;
+    white-space: nowrap;
+    box-sizing: border-box; 
+    display: inline-block;
+    transition: 0.3s;
+
+    @include global.mq(sp) {
+        width: 166px;
+        padding: 11px 19px;
+        font-size: 16px;
+    }
+
+    &:hover {
+        background-color: global.$text-color;
+        color: global.$text-color2;
+        border: 2px solid global.$text-color2;
+    }
+}

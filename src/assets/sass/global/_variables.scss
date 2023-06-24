@@ -1,0 +1,47 @@
+// 色
+$primary-color: #64629D;
+$primary-color-sub: #9F9EC1;
+$text-color: #2D2D32;
+$text-color2: #FFF;
+$bg-color: #F9F9F9;
+
+//フォント
+$ff-main: 'Noto Sans JP', sans-serif;
+$ff-en: 'Hind', sans-serif;
+$ff-logo: 'Lato', sans-serif;
+
+//フォントウェイト
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-bold: 700;
+$fw-black: 900;
+
+//レイアウト
+$inner-width: 1187px;
+$sp-width: 376px;
+
+//ブレークポイント
+$breakpoints: (
+    "sp": "screen and (max-width: #{$sp-width - 1px})",
+    "tb": "screen and (max-width: #{$inner-width - 1px})",
+    "pc": "screen and (min-width: #{$inner-width})"
+);
+
+//重なり順(z-indexの値)
+  // ローディング
+  $loading: 300;
+  // モーダル
+  $modal: 100;
+  // ドロワー
+  $header: 40;
+  // フローティング
+  $floating: 30;
+  // ヘッダー
+  $drawer: 20;
+  // フッター
+  $footer: 10;
+  //ナンバー
+  $number: 2;
+  $default: 1;
+

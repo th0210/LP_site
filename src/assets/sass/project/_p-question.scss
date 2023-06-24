@@ -1,0 +1,123 @@
+@use "../global" as global;
+
+.p-question {
+    background-color: global.$bg-color;
+    padding: 154px 0 100px 0;
+
+    @include global.mq(sp) {
+        padding: 60px+34px 0 60px 0;
+    }
+}
+
+.p-question__title {
+    font-size: 48px;
+    font-weight: global.$fw-bold;
+    letter-spacing: 0.05em;
+    color: global.$primary-color;
+    text-align: center;
+    position: relative;
+
+    @include global.mq(sp) {
+        font-size: 30px;
+    }
+
+    span {
+        font-size: 36px;
+        font-family: global.$ff-en;
+        color: global.$primary-color-sub;
+        letter-spacing: 0;
+        position: absolute;
+        top: -54px;
+        left: 50%;
+        transform: translateX(-50%); 
+
+        @include global.mq(sp) {
+            font-size: 22px;
+            line-height: 1;
+            white-space: nowrap;
+            top: -22px-12px;
+        }
+    }
+}
+
+.p-question__items {
+    margin-top: 60px;
+    padding: 0 130px;
+
+    @include global.mq(tb) {
+        padding: 0;
+    }
+
+    @include global.mq(sp) {
+        padding: 0;
+    }
+}
+
+.p-question__item {
+    margin-top: 24px; 
+}
+
+.p-question__item-Q {
+    font-size: 18px;
+    color: global.$text-color2;
+    font-weight: global.$fw-bold;
+    background: global.$primary-color;
+    padding: 22px 10px 22px 56px;
+    border-radius: 10px;
+    position: relative;
+
+    @include global.mq(sp) {
+        font-size: 16px;
+        line-height: 26px;
+        padding: 9px 10px 9px 47px;
+        border-radius: 4px;
+    }
+
+    &::before {
+        content: "Q";
+        font-size: 22px;
+        position: absolute;
+        top: 50%;
+        left: 24px;
+        transform: translateY(-50%);
+
+        @include global.mq(sp) {
+            font-size: 22px;
+            top: 10px;
+            left: 15px;
+            transform: none;
+        }
+    }
+}
+
+.p-question__item-A {
+    font-size: 18px;
+    background: global.$text-color2;
+    padding: 22px 25px 22px 56px;
+    font-weight: global.$fw-regular;
+    line-height: 32px;
+    border-radius: 10px;
+    margin-top: 14px;
+    position: relative;
+
+    @include global.mq(sp) {
+        font-size: 16px;
+        line-height: 26px;
+        padding: 12px 16px 12px 41px;
+        margin-top: 16px;
+    }
+
+    &::before {
+        content: "A";
+        font-size: 22px;
+        line-height: 1;
+        position: absolute;
+        top: 26px;
+        left: 24px;
+
+        @include global.mq(sp) {
+            top: 12px;
+            left: 15px;
+        }
+    }
+}

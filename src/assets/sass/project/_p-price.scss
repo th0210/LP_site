@@ -1,0 +1,69 @@
+@use"../global" as global;
+
+.p-price {
+    padding: 154px 0 100px 0;
+    background: #E5E5E5;
+
+    @include global.mq(sp) {
+        padding: 60px+34px 0 60px 0;
+    }
+}
+
+.p-price__inner {
+    @include global.mq(tb) {
+        padding-right: 0;
+    }
+
+    @include global.mq(sp) {
+        padding-right: 0;
+    }
+}
+.p-price__title {
+    font-size: 48px;
+    font-weight: global.$fw-bold;
+    letter-spacing: 0.05em;
+    color: global.$primary-color;
+    text-align: center;
+    position: relative;
+
+    @include global.mq(sp) {
+        font-size: 30px;
+    }
+
+    span {
+        font-size: 36px;
+        font-family: global.$ff-en;
+        color: global.$primary-color-sub;
+        letter-spacing: 0;
+        position: absolute;
+        top: -54px;
+        left: 50%;
+        transform: translateX(-50%); 
+
+        @include global.mq(sp) {
+            font-size: 22px;
+            line-height: 1;
+            white-space: nowrap;
+            top: -22px-12px;
+        }
+    }
+}
+
+.p-price__table {
+margin-top: 70px;
+
+    @include global.mq(tb) {
+        margin-top: 0;
+        padding-top: 84px;
+        overflow: auto;
+    }
+
+    @include global.mq(sp) {
+        overflow: auto;
+        margin-top: 72px;
+    }
+
+    &::-webkit-scrollbar{
+        display:none;
+      }
+}

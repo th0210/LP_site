@@ -1,0 +1,38 @@
+@use "../global" as global;
+
+.p-mv {
+    background: #EDECFC; 
+    padding: 72px 0 34px 0;
+
+    @include global.mq(sp) {
+        padding: 60px+65px 0 60px 0;
+    }
+}
+
+.p-mv__inner {
+    display: flex;
+
+    @include global.mq(sp) {
+        display: block;
+    }
+}
+
+.p-mv__img {
+    margin-top: 32px;
+
+    @include global.mq(sp) {
+        max-width: 305px;
+        margin: 0 auto;
+    }
+
+    img {
+        width: 100%;
+        
+        @include global.mq(sp) {
+            display: none;
+        }
+    }
+}
+
+
+

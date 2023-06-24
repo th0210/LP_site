@@ -1,0 +1,29 @@
+@use "../global" as global;
+
+.p-footer-nav__lists {
+    display: flex;
+
+    @include global.mq(sp) {
+        display: block;
+    }
+}
+
+.p-footer-nav__list {
+    margin-right: 14px;
+
+    @include global.mq(sp) {
+        text-align: center;
+        margin-top: 14px;
+    }
+}
+
+.p-footer-nav__link {
+    font-size: 14px;
+    color: global.$text-color2;
+    font-weight: global.$fw-bold;
+    transition: 0.3s;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}

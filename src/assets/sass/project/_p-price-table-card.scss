@@ -1,0 +1,132 @@
+@use "../global" as global;
+
+.p-price-table-card {
+    width: 260px;
+    background: global.$text-color;
+    padding: 47px 0 41px 0; 
+
+    @include global.mq(tb) {
+        padding: 47px 12px 41px 12px;
+    }
+
+    @include global.mq(sp) {
+        width: 180px;
+        padding: 28px 7px;
+    }
+
+    &:nth-child(3) {
+        background: global.$primary-color;
+        padding-top: 58px - 16px;
+        position: relative;
+
+        @include global.mq(sp) {
+            padding: 28px 7px;
+        }
+
+        &::before {
+            content: "";
+            width: 100%;
+            height: 16px;
+            background: inherit;
+            position: absolute;
+            top: -16px;
+            left: 0;
+
+            @include global.mq(tb) {
+                top: -32px;
+                height: 32px; 
+                display: block;
+                background: global.$primary-color;
+            } 
+
+            @include global.mq(tb) {
+                top: -16px;
+            } 
+        }
+    }
+}
+
+.p-price-table-card__title {
+    font-size: 24px;
+    font-weight: global.$fw-bold;
+    line-height: 35px;
+    text-align: center;
+    color: global.$text-color2;
+
+    @include global.mq(sp) {
+        font-size: 20px;
+        line-height: 29px;
+    }
+
+    &.basic {
+        font-size: 28px;
+        line-height: 41px;
+
+        @include global.mq(sp) {
+            font-size: 22px;
+            line-height: 1;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.p-price-table-card__price {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: global.$fw-bold;
+    color: global.$text-color2;
+    text-align: center;
+    margin-top: 17px;
+
+    @include global.mq(sp) {
+        font-size: 12px;
+        line-height: 17px;
+        margin-top: 8px;
+    }
+
+    &.basic {
+        font-size: 24px;
+        line-height: 35px;
+        margin-top: 7px;
+
+        @include global.mq(sp) {
+            font-size: 16px;
+            line-height: 1.1;
+            margin-top: 7px;
+        }
+    }
+
+    span {
+        font-size: 36px;
+        line-height: 52px;
+        padding: 0 10px;
+        
+        @include global.mq(sp) {
+            font-size: 30px;
+            line-height: 43px;
+            padding: 0 5px;
+        }
+
+        &.basic {
+            font-size: 42px;
+            line-height: 61px;
+
+            @include global.mq(sp) {
+                font-size: 34px;
+                line-height: 1;
+            }
+        }
+    }
+}
+
+.p-price-table-card__button {
+    margin-top: 28px;
+
+    @include global.mq(sp) {
+        margin-top: 19px;
+    }
+
+    &.basic {
+        margin-top: 27px;
+    }
+}

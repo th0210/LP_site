@@ -1,0 +1,18 @@
+@use "../global" as global;
+
+.l-inner {
+    max-width: global.$inner-width;
+    margin: 0 auto;
+    padding: 0 40px;
+    box-sizing: content-box; 
+
+    
+    @include global.mq('tb') {
+        padding: 0 30px;
+    }
+
+    @include global.mq('sp') {
+        max-width: global.$sp-width;
+        padding: 0 20px;
+    }
+}

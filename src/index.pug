@@ -1,0 +1,306 @@
+doctype html 
+html(lang="ja")
+    head 
+        meta(charset="UTF-8")
+        title WebLP 
+        meta(name="description" items="")
+        meta(name="viewport" items="width=device-width,initial-scale=1")
+
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;700&family=Lato:wght@300;400;700;900&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet")
+        link(rel="stylesheet" href="https://kit.fontawesome.com/230697b7eb.css" crossorigin="anonymous")
+
+        link(rel="stylesheet" href="./public/assets/css/style.css")
+        link(rel="stylesheet" href="./public/assets/js/script.js")
+
+    body 
+        header.p-header
+            .l-inner.p-header__inner 
+                h1.p-header__logo Ravek
+                .p-header__content
+                    nav.p-global-nav.p-header__nav 
+                        ul.p-global-nav__lists 
+                            li.p-global-nav__list: a(href="").p-global-nav__link 特長
+                            li.p-global-nav__list: a(href="").p-global-nav__link 導入実績
+                            li.p-global-nav__list: a(href="").p-global-nav__link 導入までの流れ
+                            li.p-global-nav__list: a(href="").p-global-nav__link 料金プラン
+                            li.p-global-nav__list: a(href="").p-global-nav__link よくある質問
+                    .p-header__button
+                        a(href="").c-button-small 無料で使ってみる
+                .p-header-menu.p-header__menu.u-pc-hidden
+                    p.p-header-menu__head MENU 
+                    .p-header-menu__icon 
+                        span.p-header-menu__bar1 
+                        span.p-header-menu__bar2
+                        span.p-header-menu__bar3
+
+        .p-drawer
+            .l-inner.p-drawer__inner 
+                .p-drawer-nav 
+                    ul.p-drawer-nav__lists
+                        li.p-drawer-nav__list
+                            a(href="").p-drawer-nav__link 特長
+                        li.p-drawer-nav__list
+                            a(href="").p-drawer-nav__link 導入実績
+                        li.p-drawer-nav__list
+                            a(href="").p-drawer-nav__link 導入までの流れ
+                        li.p-drawer-nav__list
+                            a(href="").p-drawer-nav__link 料金プラン
+                        li.p-drawer-nav__list
+                            a(href="").p-drawer-nav__link よくある質問
+                .p-drawer_button-area
+                    .p-drawer__button 
+                        a(href="").c-button-middle.drawer 無料でRavekを使ってみる
+                    .p-drawer__button
+                        a(href="").c-button-middle-white.drawer 資料をダウンロードする
+                        
+
+        main 
+            .p-mv 
+                .l-inner.p-mv__inner 
+                    .p-mv-content
+                        h3.p-mv-content__head タスク管理は<br><span>時間をかけず、高速に。</span>
+                        p.p-mv-content__sub Ravek（レイベック）は複数人のプロジェクトにおけるタスク管理を<br class="u-tb-hidden">簡単かつ高速にし、生産性を向上させるツールです。
+                        .p-mv-content__img
+                            img(src="./public/assets/img/Atwork-amico.png" alt="")
+                        .p-mv-content__button-area 
+                            .p-mv-content__button-area-item
+                                a(href="").c-button-middle まずは無料で使ってみる
+                            .p-mv-content__button-area-item
+                                a(href="").c-button-middle-white 資料をダウンロードする
+                    .p-mv__img.u-sp-hidden.u-tb-hidden
+                        img(src="./public/assets/img/Atwork-amico.png" alt="")
+
+            section.p-about 
+                .l-inner.p-about__inner
+                    h2.p-about__title <span>What is Ravek ?</span>タスク管理の時間を削減するツール
+                    p.p-about__sub Ravek（レイベック）は、<span>複数人が関わるプロジェクトでのタスク管理を簡単かつ高速にするツール</span>です。<br><br>タスクの登録や進捗管理の手間を減らし、わかりやすく見える化することで<br>タスク管理にかかる時間を極限まで減らし、本質的な業務に時間を使いましょう。
+                    .p-about__button
+                        a(href="").c-button-large 無料でRavekを使ってみる
+
+            section.p-feature 
+                .l-inner.p-feature__inner 
+                    h2.p-feature__title Ravekの3つの特長<span>Feature</span>
+                    .p-feature__items
+                        .p-feature-item
+                            .p-feature-item__texts1
+                                h3.p-feature-item__head <span>01</span>タスクの種類・進歩を<br>ダッシュボードで確認可能
+                                p.p-feature-item__sub Ravekはメンバーが入力したタスクを整理し、ダッシュボードに<br class="u-sp-hidden">ガントチャートとして表示。ダッシュボードを確認するだけで、<br class="u-sp-hidden">誰のどのタスクがどの程度進んでいるのかを一目で把握できます。
+                            .p-feature-item__img1
+                                img(src="./public/assets/img/Dashboard-amico.png" alt="")
+                        
+                        .p-feature-item
+                            .p-feature-item__img2
+                                img(src="./public/assets/img/Designtools-amico.png" alt="")
+                            .p-feature-item__texts2
+                                h3.p-feature-item__head <span>02</span>タスク入力がシンプルかつ簡単。<br>入力の手間が最小限に
+                                p.p-feature-item__sub.item2 タスク管理ツールで面倒になりがちなタスクの入力作業。<br class="u-sp-hidden">RavekはPC・スマートフォンのどちらでもシンプルかつ簡単に入<br class="u-sp-hidden">力でき、手間が最小限に抑えられます。本格的な業務に時間を割<br class="u-sp-hidden">きましょう。
+
+                        .p-feature-item
+                            .p-feature-item__texts3
+                                h3.p-feature-item__head <span>03</span>SlackとのAPI連携<br>ツール切り替えの手間を削減
+                                p.p-feature-item__sub RavekはSlackと連携することで、Slack上でRavekをタスクを追<br>加したり、確認したりできます。都度の切り替えの手間がなくな<br>り、シームレスに扱えるのが特長です。Slackを導入しているなら<br>違和感なく使用できます。
+                            .p-feature-item__img3
+                                img(src="./public/assets/img/Onlineworld-amico.png" alt="")
+            .p-cta
+                .l-inner.p-cta__inner
+                    p.p-cta-text 14日間の無料トライアル可能。<br>Ravekで快適なタスク管理を体験しよう
+                    .p-cta__button 
+                        a(href="").c-button-large.cta 無料でRavekを使ってみる
+
+            section.p-users 
+                .l-inner.p-users__inner 
+                    h2.p-users__title 導入実績<span>Users</span>
+                    .p-users-items.p-users__content
+                        .p-users-items__item
+                            img(src="./public/assets/img/SnapCrab_NoName_2021-2-11_23-35-54_No-00 5.png" alt="")
+                        .p-users-items__item
+                            img(src="./public/assets/img/SnapCrab_NoName_2021-2-11_23-35-54_No-00 5.png" alt="")
+                        .p-users-items__item
+                            img(src="./public/assets/img/SnapCrab_NoName_2021-2-11_23-35-54_No-00 5.png" alt="")
+                        .p-users-items__item
+                            img(src="./public/assets/img/SnapCrab_NoName_2021-2-11_23-35-54_No-00 5.png" alt="")
+                        .p-users-items__item
+                            img(src="./public/assets/img/SnapCrab_NoName_2021-2-11_23-35-54_No-00 5.png" alt="")
+                        .p-users-items__item
+                            img(src="./public/assets/img/SnapCrab_NoName_2021-2-11_23-35-54_No-00 5.png" alt="")
+                        .p-users-items__item
+                            img(src="./public/assets/img/SnapCrab_NoName_2021-2-11_23-35-54_No-00 5.png" alt="")
+                        .p-users-items__item
+                            img(src="./public/assets/img/SnapCrab_NoName_2021-2-11_23-35-54_No-00 5.png" alt="")
+
+            section.p-flow
+                .l-inner.p-flow__inner 
+                    h2.p-flow__title 導入までの流れ<span>Flow</span>
+                    .p-flow-items.p-flow__content
+                        .p-flow-items__item 
+                            span.p-flow-items__item-number 01
+                            .p-flow-items__item-img
+                                img(src="./public/assets/img/01 img.png" alt="")
+                            h4.p-flow-items__item-head 無料トライアルを開始
+                            .p-flow-items__item-sub まずはRavekの使用感をお試しくださ<br class="u-sp-hidden">い。最初の14日間は無料でご使用いた<br class="u-sp-hidden">だけます。
+
+                        .p-flow-items__triangle 
+                            img(src="./public/assets/img/Polygon1.png" alt="")
+
+                        .p-flow-items__item
+                            span.p-flow-items__item-number 02
+                            .p-flow-items__item-img.number2
+                                img(src="./public/assets/img/02 img.png" alt="")
+                            h4.p-flow-items__item-head 本格導入をサポート
+                            .p-flow-items__item-sub Ravekを気に入っていただけました<br class="u-sp-hidden">ら、適したプランで導入ください。導<br class="u-sp-hidden">入にお困りの際は、メール、または<br>チャットにてサポートいたします。
+
+                        .p-flow-items__triangle
+                            img(src="./public/assets/img/Polygon1.png" alt="")
+
+                        .p-flow-items__item
+                            span.p-flow-items__item-number 03
+                            .p-flow-items__item-img.number3
+                                img(src="./public/assets/img/03 img.png" alt="")
+                            h4.p-flow-items__item-head 全プロジェクトへ展開
+                            .p-flow-items__item-sub Ravekは段階的な導入がおすすめで<br>す。主要プロジェクトでの運用に慣れ<br class="u-sp-hidden">たら、全プロジェクトへ展開を行いま<br class="u-sp-hidden">しょう。   
+
+            .p-cta
+                .l-inner.p-cta__inner
+                    p.p-cta-text 14日間の無料トライアル可能。<br>Ravekで快適なタスク管理を体験しよう
+                    .p-cta__button 
+                        a(href="").c-button-large.cta 無料でRavekを使ってみる
+
+            section.p-price 
+                .l-inner.p-price__inner 
+                    h2.p-price__title 料金プラン<span>Price</span>
+                    .p-price-table.p-price__table
+                        table.p-price-table__box
+                            tr.p-price-table__row
+                                th.u-bg-transparent
+                                th.p-price-table-card
+                                    p.p-price-table-card__title ライト
+                                    p.p-price-table-card__price 月額<span>1,980</span>円
+                                    .p-price-table-card__button 
+                                        a(href="").c-button-table-white 無料で使ってみる
+                                th.p-price-table-card
+                                    p.p-price-table-card__title.basic ベーシック
+                                    p.p-price-table-card__price.basic 月額<span class="basic">2,980</span>円 
+                                    .p-price-table-card__button.basic 
+                                        a(href="").c-button-table 無料で使ってみる
+                                th.p-price-table-card
+                                    p.p-price-table-card__title プレミアム
+                                    p.p-price-table-card__price 月額<span>4,980</span>円  
+                                    .p-price-table-card__button 
+                                        a(href="").c-button-table-white 無料で使ってみる
+
+                            tr.p-price-table__row
+                                th.p-price-table__head プロジェクト数 
+                                td.p-price-table__detail 5
+                                td.p-price-table__detail 15
+                                td.p-price-table__detail 15
+                            
+                            tr.p-price-table__row
+                                th.p-price-table__head メンバー数 
+                                td.p-price-table__detail 10
+                                td.p-price-table__detail 30
+                                td.p-price-table__detail 30
+
+                            tr.p-price-table__row
+                                th.p-price-table__head ストレージ(容量) 
+                                td.p-price-table__detail 25GB
+                                td.p-price-table__detail 50GB
+                                td.p-price-table__detail 100GB  
+
+                            tr.p-price-table__row
+                                th.p-price-table__head 2段階認証 
+                                td.p-price-table__detail 
+                                td.p-price-table__detail 〇
+                                td.p-price-table__detail 〇
+
+                            tr.p-price-table__row
+                                th.p-price-table__head IP制限 
+                                td.p-price-table__detail 
+                                td.p-price-table__detail 
+                                td.p-price-table__detail 〇
+
+                            tr.p-price-table__row
+                                th.p-price-table__head メールサポート 
+                                td.p-price-table__detail 〇
+                                td.p-price-table__detail 〇
+                                td.p-price-table__detail 〇
+
+                            tr.p-price-table__row
+                                th.p-price-table__head チャットサポート 
+                                td.p-price-table__detail 〇
+                                td.p-price-table__detail 〇
+                                td.p-price-table__detail 〇
+
+                            tr.p-price-table__row
+                                th.p-price-table__head  
+                                td.p-price-table__detail
+                                    .p-price-table__row-button  
+                                        a(href="").c-button-table-white2 無料で使ってみる
+                                td.p-price-table__detail 
+                                    .p-price-table__row-button  
+                                        a(href="").c-button-table2 無料で使ってみる
+                                td.p-price-table__detail 
+                                    .p-price-table__row-button  
+                                        a(href="").c-button-table-white2 無料で使ってみる
+
+
+            section.p-question 
+                .l-inner.p-question__inner
+                    h2.p-question__title よくある質問<span>Question</span>
+                    .p-question__items 
+                        .p-question__item
+                            .p-question__item-Q Ravekはユーザー1人あたりの課金制なのですか？ 
+                            .p-question__item-A いえ、Ravekは１アカウント開設いただくと、そのプランに応じたユーザー数の分だけ、使用できます。<br>もしプランのデフォルトユーザー数を超えて利用されたい場合は、お問い合わせください。
+
+                        .p-question__item
+                            .p-question__item-Q Ravekはユーザー1人あたりの課金制なのですか？ 
+                            .p-question__item-A いえ、Ravekは１アカウント開設いただくと、そのプランに応じたユーザー数の分だけ、使用できます。<br>もしプランのデフォルトユーザー数を超えて利用されたい場合は、お問い合わせください。
+
+                        .p-question__item
+                            .p-question__item-Q Ravekはユーザー1人あたりの課金制なのですか？ 
+                            .p-question__item-A いえ、Ravekは１アカウント開設いただくと、そのプランに応じたユーザー数の分だけ、使用できます。<br>もしプランのデフォルトユーザー数を超えて利用されたい場合は、お問い合わせください。
+
+                        .p-question__item
+                            .p-question__item-Q Ravekはユーザー1人あたりの課金制なのですか？ 
+                            .p-question__item-A いえ、Ravekは１アカウント開設いただくと、そのプランに応じたユーザー数の分だけ、使用できます。<br>もしプランのデフォルトユーザー数を超えて利用されたい場合は、お問い合わせください。
+
+            .p-cta
+                .l-inner.p-cta__inner
+                    p.p-cta-text 14日間の無料トライアル可能。<br>Ravekで快適なタスク管理を体験しよう
+                    .p-cta__button 
+                        a(href="").c-button-large.cta 無料でRavekを使ってみる
+                            
+        footer.p-footer
+            .l-inner.p-footer__inner
+                .p-footer__content
+                    h1.p-footer__logo Ravek
+                    .p-footer-nav.p-footer__nav 
+                        ul.p-footer-nav__lists 
+                            li.p-footer-nav__list
+                                a(href="").p-footer-nav__link 会社概要
+                            li.p-footer-nav__list
+                                a(href="").p-footer-nav__link プライバシーポリシー
+                            li.p-footer-nav__list
+                                a(href="").p-footer-nav__link 利用規約
+                            li.p-footer-nav__list
+                                a(href="").p-footer-nav__link お問い合わせ
+
+                    p.p-footer__copyright &copy; Ravek Inc. 2021<span>Illustration by FreepikStoryset</span>
+
+                .p-footer-sns
+                    p.p-footer-sns__head Share on SNS
+                    .p-footer-sns__content 
+                        .p-footer-sns__item 
+                            a(href="").p-footer-sns__twitter-link
+                                i.fa-brands.fa-twitter
+                        .p-footer-sns__item
+                            a(href="").p-footer-sns__instagram-link
+                                i.fa-brands.fa-instagram
+                        .p-footer-sns__item 
+                            a(href="").p-footer-sns__facebook-link
+                                i.fa-brands.fa-facebook
+        
+        script(src="https://kit.fontawesome.com/230697b7eb.js" crossorigin="anonymous")
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js")
+        script(src="./assets/js/script.js")
